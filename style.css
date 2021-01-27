@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+.container {
+    margin: 0 auto;
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    background-color: #F5F5F6;
+    align-items: center;
+    height: 50px;
+}
+
+.menuTitle {
+    display: flex; 
+    justify-content: space-between; 
+    flex-grow: 0.3;  
+}
+
+.bankHref {
+    color: black;
+}
+
+.refTitle {
+    color: #959BA4;
+}
+
+.menuTitle a {
+    text-decoration: none;
+    margin-right: 21px;
+    font-size: 11px;  
+    font-weight: 500;  
+}
+
+.menuTitle a:hover {
+    color: black;
+}
+
+.bankLogo {
+    padding-left: 100px;
+}
+
+.bankLogoImg {
+    width: 89px;
+    height: 23px;
+}
+
+.loginButton {
+    font-family: 'Roboto', sans-serif;
+    margin-right: 100px;
+    width: 58px;
+    height: 33px;
+    background-color: white;
+    color: black;
+    border-radius: 4px;   
+    border: none; 
+    font-weight: 500;
+}
+
+.converterTitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 56px;
+    margin-left: 27%;
+}
+
+.converterBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 46%;
+    margin: 0 auto;
+}
+
+.iHave {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #9F9F9F;
+}
+
+.converterBlock__currSelection {
+    display: flex;
+    justify-content: flex-start;
+    background-color: none;
+    margin: 0 0 20px 0;
+}
+
+.converterBlock__button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 51px;
+    height: 28px;
+    border: 1px solid #C6C6C6;
+    background-color: white;
+    border-right: unset;
+    color: #C6C6C6;
+    font-size: 12px;
+}
+
+.converterBlock__button:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.converterBlock__button:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-right: 1px solid #C6C6C6;
+}
+
+.converterBlock__currValueBlock {
+    width: 253px;
+    height: 102px;
+    border-radius: 3px;
+    border: 1px solid #C6C6C6;
+}
+
+.converterBlock__value {    
+    margin: 0;
+    padding: 11px 0 0 14px;
+    border: none;
+}
+
+.active {
+    background-color: #833AE0;
+}
+
+.active option {
+    background-color: white;
+}
+
+.converterBlock__input {    
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    border: none;
+    width: 230px;
+    outline: none;   
+}
+
+.styleOne {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 26px 0 0 0;
+    padding-left: 14px;
+    color: #C6C6C6;
+}
+
+.converterBlock__button option {
+    color: black;
+}
+
+.svgLogo {
+    margin-top: 125px;
+}
