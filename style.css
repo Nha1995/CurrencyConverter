@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
+html {
+    /* filter: opacity(30%); */
+}
+
 .container {
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 .header {
@@ -101,6 +105,7 @@
     border-right: unset;
     color: #C6C6C6;
     font-size: 12px;
+    outline: none;
 }
 
 .converterBlock__button:first-child {
@@ -129,6 +134,7 @@
 
 .active {
     background-color: #833AE0;
+    color: white;
 }
 
 .active option {
@@ -159,4 +165,8 @@
 
 .svgLogo {
     margin-top: 125px;
+}
+
+.svg:hover {
+    cursor: pointer;
 }
