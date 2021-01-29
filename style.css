@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 html {
-    /* filter: opacity(30%); */
+    /* background: rgba(0,0,0,.48); */
 }
 
 .container {
     margin: 0 auto;    
+    /* filter: opacity(40%);     */
 }
 
 .header {
@@ -147,7 +148,13 @@ html {
     font-weight: 700;
     border: none;
     width: 230px;
-    outline: none;   
+    outline: none;     
+}
+
+.converterBlock__input::-webkit-outer-spin-button,
+.converterBlock__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .styleOne {

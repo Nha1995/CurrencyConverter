@@ -55,12 +55,12 @@ swapButton.addEventListener('click', () => {
         }
     });
 
-leftInput.addEventListener('input', (event) => {
-    rightInput.value = `${(leftInput.value * courseLeftValue)}`;
+leftInput.addEventListener('input', () => {
+    rightInput.value = leftInput.value * courseLeftValue.toFixed(4);
 })
 
-rightInput.addEventListener('input', (event) => {
-    leftInput.value = `${(rightInput.value * courseRightValue)}`;
+rightInput.addEventListener('input', () => {
+    leftInput.value = `${(rightInput.value * courseRightValue).toFixed(4)}`;
 })
 
 currencyFrom.forEach((item) => {
@@ -101,7 +101,9 @@ function textReduction(from, to) {
     if(from == to) {
         textFrom.textContent = `1 ${from} = 1 ${to}`;
         textTo.textContent = `1 ${to} = 1 ${from}`;          
-            rightInput.value = leftInput.value;
+            rightInput.value = leftInput.value.toFixed(4);
+            courseLeftValue = 1;
+            courseRightValue = 1; 
     } else {  
 
     fetch(`https://api.ratesapi.io/api/latest?base=${from}&symbols=${to}`)
@@ -110,7 +112,7 @@ function textReduction(from, to) {
             let fromValue = data.rates[`${to}`]; 
             courseLeftValue = fromValue;           
             textFrom.textContent = `1 ${from} = ${fromValue} ${to}`;
-            rightInput.value = `${(leftInput.value * courseLeftValue).toFixed(6)}`;})
+            rightInput.value = `${(leftInput.value * courseLeftValue).toFixed(4)}`;})
             .catch((error) => {
                 alert('Что-то пошло не так...');
             })
@@ -118,7 +120,7 @@ function textReduction(from, to) {
          fetch(`https://api.ratesapi.io/api/latest?base=${to}&symbols=${from}`)
         .then(response => response.json())
         .then((data) => {
-            let toValue = data.rates[`${from}`];
+            let toValue = data.rates[`${from}`];    
             courseRightValue = toValue;
             textTo.textContent = `1 ${to} = ${toValue} ${from}`;
          });
